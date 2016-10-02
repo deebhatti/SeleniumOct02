@@ -16,7 +16,7 @@ public class AllLinksWorkingTest {
 		driver.get("http://newtours.demoaut.com");
 		
 		WebElement table = driver.findElement(By.xpath("html/body/div[1]/table/tbody/tr/td[1]/table/tbody/tr/td/table/tbody/tr/td/table"));
-		
+		//A new comment added in line number 19
 		List<WebElement> links =  table.findElements(By.tagName("a")); 
 		System.out.println("Total number of links on webpage = " + links.size());
 		String[] linkTexts = new String[links.size()];
